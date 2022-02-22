@@ -67,11 +67,47 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  #   vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+  # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    
+    # generally useful tools
+    curl
+    git
+    lshw
+    neofetch
+    
+    # sys tools
     wget
+    htop
+    
+    # TODO:
+    vim
+    p7zip
+    qbittorrent
+    flameshot
+    libreoffice
+    vlc
+    mpv
+    youtube-dl
+    anydesk
+    atom
+    freetube
+    inkscape
+    libsForQt5.kdeconnect-kde
+    zoom-us
+    
+    # browser
     firefox
     chromium
-    vim
+    
+    # Printing
+    
+    # Fun
+    # cmatrix
+   
+    # Research before install
+    # pipewire
+    # wayland
+    
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
