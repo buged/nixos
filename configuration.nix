@@ -83,6 +83,7 @@
     lshw
     neofetch
     numlockx
+    python310
     
     # sys tools
     wget
@@ -129,6 +130,7 @@
     pkg.pname [
       "anydesk"
       "zoom"
+      "teams"
     ]
   );
   
