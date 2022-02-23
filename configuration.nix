@@ -13,6 +13,11 @@
   networking.networkmanager.enable = true;
   networking.hostName = "nixos"; # Define your hostname.
   networking.wireless.enable = false;  # Enables wireless support via wpa_supplicant.
+  networking.wireless.networks = {
+  "." = {                # SSID with no spaces or special characters
+    psk = "20212021";
+  };
+  };
 
   # Set your time zone.
   time.timeZone = "America/Sao_Paulo";
@@ -50,6 +55,9 @@
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
+  services.printing.drivers = [ pkgs.epson-escpr ];
+  services.avahi.enable = true; # for CUPS to automatically find the printer via Wi-Fi
+  services.avahi.nssmdns = true; # for CUPS to automatically find the printer via Wi-Fi
 
   # Enable sound.
   sound.enable = true;
@@ -100,6 +108,9 @@
     chromium
     
     # Printing
+    # Drivers Epson L3250
+    epson-escpr
+    epson-escpr2
     
     # Fun
     # cmatrix
@@ -111,8 +122,13 @@
   ];
   
   # Allowing nonfree applications
-  nixpkgs.config.allowUnfree = true;
-
+  # nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.allowUnfreePredicate = (pkg: builtins.elem
+    pkg.pname [
+      "anydesk"
+      "zoom"
+    ]
+  );
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
