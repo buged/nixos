@@ -82,6 +82,7 @@
     git
     lshw
     neofetch
+    numlockx
     
     # sys tools
     wget
