@@ -103,6 +103,7 @@
     inkscape
     libsForQt5.kdeconnect-kde
     zoom-us
+    teams
     
     # browser
     firefox
