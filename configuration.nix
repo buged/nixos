@@ -84,6 +84,7 @@
     neofetch
     numlockx
     python310
+    xarchiver
     
     # sys tools
     wget
