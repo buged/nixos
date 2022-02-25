@@ -84,7 +84,7 @@
     neofetch
     numlockx
     python310
-    xarchiver
+    libsForQt514.ark
     
     # sys tools
     wget
