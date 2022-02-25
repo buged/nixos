@@ -138,7 +138,10 @@
   # System upgrade automatically
   system.autoUpgrade.enable = true; 
   system.autoUpgrade.allowReboot = false; # if true, restarts. if false, it runs nixos-rebuild switch. 
-
+  
+  # Enable KDE Connect
+  programs.kdeconnect.enable = true;
+  
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
