@@ -21,6 +21,21 @@
 
   # Set your time zone.
   time.timeZone = "America/Sao_Paulo";
+  
+  # Installing Fonts
+  #fonts.enableFontDir = true;
+  #fonts.enableCoreFonts = true;
+  #fonts.enableGhostscriptFonts = true;
+  #fonts.fonts = with pkgs; [
+  #  corefonts
+  #  inconsolata
+  #  liberation_ttf
+  #  dejavu_fonts
+  #  bakoma_ttf
+  #  gentium
+  #  ubuntu_font_family
+  #  terminus_font
+  #];
 
   # The global useDHCP flag is deprecated, therefore explicitly set to false here.
   # Per-interface useDHCP will be mandatory in the future, so this generated config
@@ -28,6 +43,10 @@
   networking.useDHCP = false;
   networking.interfaces.enp2s0.useDHCP = true;
   networking.interfaces.wlp3s0.useDHCP = true;
+  
+  # TODO: enable bluetooth if you use it on your MBP, otherwise I
+  # just disable to save on battery.
+  hardware.bluetooth.enable = true;
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -48,6 +67,18 @@
   services.xserver.displayManager.lightdm.enable = true;
   services.xserver.desktopManager.plasma5.enable = true;
   
+  services.xserver.multitouch.enable = true;
+  services.xserver.multitouch.invertScroll = true;
+
+  services.xserver.synaptics.additionalOptions = ''
+    Option "VertScrollDelta" "-100"
+    Option "HorizScrollDelta" "-100"
+  '';
+  services.xserver.synaptics.enable = true;
+  services.xserver.synaptics.tapButtons = true;
+  services.xserver.synaptics.fingersMap = [ 0 0 0 ];
+  services.xserver.synaptics.buttonsMap = [ 1 3 2 ];
+  services.xserver.synaptics.twoFingerScroll = true;
 
   # Configure keymap in X11
   services.xserver.layout = "us";
@@ -141,6 +172,9 @@
   
   # Enable KDE Connect
   programs.kdeconnect.enable = true;
+  
+  # Enable Numlock
+  programs.numlockx.enable = true;
   
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
