@@ -117,7 +117,7 @@
     epson-escpr2
     
     # Fun
-    # cmatrix
+    cmatrix
    
     # Research before install
     # pipewire
