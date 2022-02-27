@@ -13,11 +13,11 @@
   networking.networkmanager.enable = true;
   networking.hostName = "nixos"; # Define your hostname.
   networking.wireless.enable = false;  # Enables wireless support via wpa_supplicant.
-  networking.wireless.networks = {
-  "." = {                # SSID with no spaces or special characters
-    psk = "20212021";
-  };
-  };
+  "networking.wireless.networks = {
+  ""." = {                # SSID with no spaces or special characters
+  "  psk = "20212021";
+  "};
+  "};
 
   # Set your time zone.
   time.timeZone = "America/Sao_Paulo";
