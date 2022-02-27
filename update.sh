@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 updateSystem () {
 cd /home/us3r/nixos
 git pull https://github.com/buged/nixos
