@@ -107,6 +107,8 @@
     # numlockx
     python310
     libsForQt5.ark
+    killall
+    xorg.xkill
     
     # sys tools
     wget
