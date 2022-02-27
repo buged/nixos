@@ -107,6 +107,7 @@
     # numlockx
     python310
     libsForQt5.ark
+    libsForQt5.plasma-nm
     
     # sys tools
     wget
