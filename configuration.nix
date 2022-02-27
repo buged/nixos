@@ -67,9 +67,6 @@
   services.xserver.displayManager.lightdm.enable = true;
   services.xserver.desktopManager.plasma5.enable = true;
   
-  services.xserver.multitouch.enable = true;
-  services.xserver.multitouch.invertScroll = true;
-
   services.xserver.synaptics.additionalOptions = ''
     Option "VertScrollDelta" "-100"
     Option "HorizScrollDelta" "-100"
