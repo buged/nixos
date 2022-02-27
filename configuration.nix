@@ -67,16 +67,6 @@
   services.xserver.displayManager.lightdm.enable = true;
   services.xserver.desktopManager.plasma5.enable = true;
   
-  services.xserver.synaptics.additionalOptions = ''
-    Option "VertScrollDelta" "-100"
-    Option "HorizScrollDelta" "-100"
-  '';
-  services.xserver.synaptics.enable = true;
-  services.xserver.synaptics.tapButtons = true;
-  services.xserver.synaptics.fingersMap = [ 0 0 0 ];
-  services.xserver.synaptics.buttonsMap = [ 1 3 2 ];
-  services.xserver.synaptics.twoFingerScroll = true;
-
   # Configure keymap in X11
   services.xserver.layout = "us";
   services.xserver.xkbOptions = "eurosign:e";
