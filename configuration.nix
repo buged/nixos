@@ -100,7 +100,7 @@
     git
     lshw
     neofetch
-    numlockx
+    # numlockx
     python310
     libsForQt5.ark
     
