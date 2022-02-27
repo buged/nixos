@@ -81,6 +81,9 @@
   sound.enable = true;
   hardware.pulseaudio.enable = true;
 
+  # Update Intel CPU Microcode
+  hardware.cpu.intel.updateMicrocode = true;
+
   # Enable touchpad support (enabled default in most desktopManager).
   services.xserver.libinput.enable = true;
 
