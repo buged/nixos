@@ -110,16 +110,15 @@
     killall
     xorg.xkill
     duf                  # disk usage/free utility
-    simple-scan          # scanner gui
-    simplescreenrecorder # screen recorder gui
-    xsel                 # clipboard support (also for neovim)
+    # simple-scan          # scanner gui
+    # simplescreenrecorder # screen recorder gui
     
     # sys tools
     wget
     htop
     
     # TODO:
-    vim
+    vim_configurable
     p7zip
     qbittorrent
     flameshot
