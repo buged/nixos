@@ -99,6 +99,7 @@
     # simplescreenrecorder # screen recorder gui
     xclip # Tool to access the X clipboard from a console application
     neovim
+    alacritty
     
     # sys tools
     wget
