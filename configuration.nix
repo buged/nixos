@@ -97,6 +97,7 @@
     duf                  # disk usage/free utility
     # simple-scan          # scanner gui
     # simplescreenrecorder # screen recorder gui
+    xclip # Tool to access the X clipboard from a console application
     
     # sys tools
     wget
