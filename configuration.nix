@@ -101,6 +101,10 @@
     neovim
     alacritty
     
+    # Enable vim copy/past external
+    libX11
+    libXt
+    
     # sys tools
     wget
     htop
@@ -156,12 +160,6 @@
   
   # Enable KDE Connect
   programs.kdeconnect.enable = true;
-  
-  # Enable vim copy/past external
-  environment.systemPackages = [
-    (pkgs.vim.overrideAttrs (oldAttrs: {
-      buildInputs = (oldAttrs.buildInputs ++ [ pkgs.xorg.libX11 pkgs.xorg.libXt ]);
-    }))
   
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
