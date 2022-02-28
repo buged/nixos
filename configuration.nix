@@ -22,21 +22,6 @@
 
   # Set your time zone.
   time.timeZone = "America/Sao_Paulo";
-  
-  # Installing Fonts
-  #fonts.enableFontDir = true;
-  #fonts.enableCoreFonts = true;
-  #fonts.enableGhostscriptFonts = true;
-  #fonts.fonts = with pkgs; [
-  #  corefonts
-  #  inconsolata
-  #  liberation_ttf
-  #  dejavu_fonts
-  #  bakoma_ttf
-  #  gentium
-  #  ubuntu_font_family
-  #  terminus_font
-  #];
 
   # The global useDHCP flag is deprecated, therefore explicitly set to false here.
   # Per-interface useDHCP will be mandatory in the future, so this generated config
