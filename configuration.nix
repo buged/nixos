@@ -98,6 +98,7 @@
     # simple-scan          # scanner gui
     # simplescreenrecorder # screen recorder gui
     xclip # Tool to access the X clipboard from a console application
+    neovim
     
     # sys tools
     wget
