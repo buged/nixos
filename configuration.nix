@@ -103,7 +103,7 @@
     htop
     
     # TODO:
-    vim
+    vim_configurable
     p7zip
     qbittorrent
     flameshot
