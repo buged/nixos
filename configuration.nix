@@ -102,8 +102,8 @@
     alacritty
     
     # Enable vim copy/past external
-    libX11
-    libXt
+    xorg.libX11
+    xorg.libXt
     
     # sys tools
     wget
