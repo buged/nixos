@@ -97,13 +97,13 @@
     duf                  # disk usage/free utility
     # simple-scan          # scanner gui
     # simplescreenrecorder # screen recorder gui
-    xclip # Tool to access the X clipboard from a console application
-    neovim
-    alacritty
+    # xclip # Tool to access the X clipboard from a console application
+    # neovim
+    # alacritty
     
     # Enable vim copy/past external
-    xorg.libX11
-    xorg.libXt
+    # xorg.libX11
+    # xorg.libXt
     
     # sys tools
     wget
