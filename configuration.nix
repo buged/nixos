@@ -109,6 +109,10 @@
     libsForQt5.ark
     killall
     xorg.xkill
+    duf                  # disk usage/free utility
+    simple-scan          # scanner gui
+    simplescreenrecorder # screen recorder gui
+    xsel                 # clipboard support (also for neovim)
     
     # sys tools
     wget
