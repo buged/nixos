@@ -97,6 +97,7 @@
     duf                  # disk usage/free utility
     # simple-scan          # scanner gui
     # simplescreenrecorder # screen recorder gui
+    ventoy-bin
     
     # sys tools
     wget
