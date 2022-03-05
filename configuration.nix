@@ -113,6 +113,7 @@
     mpv
     youtube-dl
     anydesk
+    teamviewer
     atom
     freetube
     inkscape
@@ -145,6 +146,7 @@
       "anydesk"
       "zoom"
       "teams"
+      "teamviewer"
     ]
   );
   
