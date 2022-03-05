@@ -98,6 +98,7 @@
     # simple-scan          # scanner gui
     # simplescreenrecorder # screen recorder gui
     ventoy-bin
+    xz
     
     # sys tools
     wget
