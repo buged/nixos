@@ -99,6 +99,7 @@
     # simplescreenrecorder # screen recorder gui
     ventoy-bin
     xz
+    appimage-run
     
     # sys tools
     wget
