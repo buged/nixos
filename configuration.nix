@@ -157,7 +157,8 @@
   system.autoUpgrade.allowReboot = false; # if true, restarts. if false, it runs nixos-rebuild switch. 
   
   # Enable daily garbage collection to remove unused packages.
-  nix.gc.automatic = false;
+  nix.gc.automatic = true;
+  nix.gc.options = "--delete-older-than 8d";
   
   # Enable KDE Connect
   programs.kdeconnect.enable = true;
