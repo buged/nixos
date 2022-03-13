@@ -100,7 +100,6 @@
     ventoy-bin
     xz
     appimage-run
-    partition-manager      # Kde Partition Manager
     gparted
     
     # sys tools
