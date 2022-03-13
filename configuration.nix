@@ -101,6 +101,7 @@
     xz
     appimage-run
     gparted
+    ventoy-bin
     
     # sys tools
     wget
