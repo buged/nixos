@@ -14,11 +14,6 @@
   networking.hostName = "nixos"; # Define your hostname.
   networking.wireless.enable = false;  # Enables wireless support via wpa_supplicant.
   networking.wireless.networks.".".pskRaw = "bfe5ba93ebcad0b18e2164cf5d5bb0e9f241bfb5af477164a95022477de02b3e";
-  # networking.wireless.networks = {
-  # "." = {                # SSID with no spaces or special characters
-  #   psk = "bfe5ba93ebcad0b18e2164cf5d5bb0e9f241bfb5af477164a95022477de02b3e";
-  # };
-  # };
 
   # Set your time zone.
   time.timeZone = "America/Sao_Paulo";
@@ -47,7 +42,6 @@
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
-
 
   # Enable the Plasma 5 Desktop Environment.
   services.xserver.displayManager.sddm.enable = true;
@@ -133,13 +127,7 @@
     # Drivers Epson L3250
     epson-escpr
     epson-escpr2
-    
-    # Fun
-    # cmatrix
-   
-    # Research before install
-    # pipewire
-    # wayland
+       
     
   ];
   
