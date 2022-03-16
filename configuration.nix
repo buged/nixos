@@ -96,6 +96,7 @@
     appimage-run
     gparted
     ventoy-bin
+    playonlinux
     
     # sys tools
     wget
