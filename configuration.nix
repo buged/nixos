@@ -97,7 +97,7 @@
     gparted
     ventoy-bin
     playonlinux
-    # distrobox              # Use any Linux distribution inside your terminal
+    distrobox              # Use any Linux distribution inside your terminal
     
     # sys tools
     wget
