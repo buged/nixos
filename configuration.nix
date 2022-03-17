@@ -88,7 +88,7 @@
     libsForQt5.ark
     killall
     xorg.xkill
-    duf                  # disk usage/free utility
+    duf                    # disk usage/free utility
     # simple-scan          # scanner gui
     # simplescreenrecorder # screen recorder gui
     ventoy-bin
@@ -97,6 +97,7 @@
     gparted
     ventoy-bin
     playonlinux
+    distrobox # Use any Linux distribution inside your terminal
     
     # sys tools
     wget
