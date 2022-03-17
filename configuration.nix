@@ -70,7 +70,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.us3r = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel" "networkmanager" "docker" ]; # Enable ‘sudo’ for the user.
   };
 
   # List packages installed in system profile. To search, run:
@@ -120,6 +120,7 @@
     libsForQt5.kdeconnect-kde
     zoom-us
     teams
+    docker
     
     # browser
     firefox
@@ -157,6 +158,9 @@
   
   # Enable TeamViewer Service
   services.teamviewer.enable = true;
+  
+  # Enabling the docker service
+  virtualisation.docker.enable = true;
   
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
