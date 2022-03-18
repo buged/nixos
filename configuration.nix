@@ -96,7 +96,6 @@
     appimage-run
     gparted
     ventoy-bin
-    playonlinux
     # distrobox              # Use any Linux distribution inside your terminal
     
     # sys tools
